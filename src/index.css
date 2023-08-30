@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+.home-main-container{
+    height: 100vh;
+    display: grid;
+    background-image: url(../public/Images/quiz-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.quiz-img-header{
+  width: 320px;
+  height: 400px;
+  margin: 5% auto;
+  margin-bottom: 0px;
+}
+.begin-the-test{
+  width: max-content;
+  margin: auto;
+  box-shadow: 0px 0px 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  padding: 1%;
+  background-color: white;
+}
+
+
+.subjects-main-container{
+  margin:auto;
+  /* padding:5% 0%; */
+  background-color: #afddfc;
+  width: 100%;
+    /* height:100vh; */
+    min-height: max-content;
+    display: grid;
+    align-items: center;
+}
+.subjects-main-container>div{
+  background: url(../public/Images/subjects-bg.jpg) no-repeat center;
+  background-size: 100% 100%;
+  width: fit-content;
+  padding: 4% 2%;
+  margin: auto;
+  display: grid;
+  align-items: center;
+}
+.image-header-subjects{
+  width: 90%;
+  margin: auto;
+  min-width: 300px;
+  height: 300px;
+}
+
+.subject-container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: max-content max-content;
+  justify-content: space-evenly;
+  margin: 50px 0px;
+}
+.subjects{
+  box-shadow: 0px 0px 10px 2px darkgrey;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    display: grid;
+    align-items: center;
+    margin: 10px;
+    /* border-radius: 20px; */
+    background-color: cornsilk;
+    padding: 1%;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.subjects:hover{
+  transform: scale(1.1);
+  background-color: cornflowerblue;
+}
+
+
+
+.result{
+  transform: translateY(5%);
+  animation: animateResult 1s 1 linear;
+}
+.result-main-container{
+   height: 100vh;
+  width:100%;
+  margin:auto;
+  text-align: center;
+  background-color: #afddfc;
+}
+.image-header-result{
+  width: 320px;
+  height: 300px;
+  margin: auto;
+}
+.res{
+      width: max-content;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px darkolivegreen;
+    margin: 1% auto;
+    padding: 1%;
+}
+@keyframes animateResult{
+  from{
+    transform: translateY(200px);
+  }
+  tp{
+    transform: translateY(50px);
+  }
+}
